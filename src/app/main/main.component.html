@@ -1,0 +1,14 @@
+<main>
+    <h1>Bienvenido al Ministerio de Salud</h1>
+    <div>
+      <img src="https://minsalud.gob.bo/images/web/banner-23a.jpg" class="banner" alt="Imagen 1">
+      <p class="tt">Inscribite ya al SUS aca!</p>
+      <a (click)="showForm = !showForm">
+        <img src="https://minsalud.gob.bo/images/web/SUSinfroma.jpg" class="but" alt="Botón Formulario">
+      </a>
+      <div *ngIf="showForm">
+        <app-my-form></app-my-form>
+      </div>
+    </div>
+  </main>
+  
